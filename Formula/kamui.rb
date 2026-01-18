@@ -5,21 +5,21 @@
 class Kamui < Formula
   desc "Command-line interface for Kamui Platform"
   homepage "https://kamui-platform.com"
-  version "0.1.1"
+  version "0.1.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/kamui-project/cli/releases/download/v0.1.1/kamui_0.1.1_darwin_amd64.tar.gz"
-      sha256 "686af4268d1cc020a3d53e02692cb2ff860b7f4f4a52f712635c39620a33b2b8"
+      url "https://github.com/kamui-project/cli/releases/download/v0.1.2/kamui_0.1.2_darwin_amd64.tar.gz"
+      sha256 "4beb7db0069b339f880a370b7c74544b6a0b90f293de9e3e8882bbf3812b2bac"
 
       def install
         bin.install "kamui"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/kamui-project/cli/releases/download/v0.1.1/kamui_0.1.1_darwin_arm64.tar.gz"
-      sha256 "5c2d0e724108c9b32b51224a10f1ee5ee7a2c648b076b1434f2ffe24dbdc760b"
+      url "https://github.com/kamui-project/cli/releases/download/v0.1.2/kamui_0.1.2_darwin_arm64.tar.gz"
+      sha256 "a372181a4883e49356ce4bcf90d90f902b2229390884c8b8ce0a8245dd6556a3"
 
       def install
         bin.install "kamui"
@@ -29,15 +29,15 @@ class Kamui < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kamui-project/cli/releases/download/v0.1.1/kamui_0.1.1_linux_amd64.tar.gz"
-      sha256 "301e0a78f326bb5d3131eae0fe9da5172de8476060b43ae4e88e7a46744568ea"
+      url "https://github.com/kamui-project/cli/releases/download/v0.1.2/kamui_0.1.2_linux_amd64.tar.gz"
+      sha256 "50bfe96109b6ed72f1e7f0342ca2d6998a61410b59054e557d33b4f4cdf8210f"
       def install
         bin.install "kamui"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kamui-project/cli/releases/download/v0.1.1/kamui_0.1.1_linux_arm64.tar.gz"
-      sha256 "83d4c26cd7f74e5f59ea9da98d9870594a8c3d02d31293a7834cb2c7ff3bb168"
+      url "https://github.com/kamui-project/cli/releases/download/v0.1.2/kamui_0.1.2_linux_arm64.tar.gz"
+      sha256 "3ef1649dd2a26cccae2380e48838401131a0c4d6d74fca8df32639c6a727909a"
       def install
         bin.install "kamui"
       end
