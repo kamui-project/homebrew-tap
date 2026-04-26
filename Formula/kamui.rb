@@ -5,21 +5,21 @@
 class Kamui < Formula
   desc "Command-line interface for Kamui Platform"
   homepage "https://kamui-platform.com"
-  version "0.1.9"
+  version "0.1.10"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/kamui-project/cli/releases/download/v0.1.9/kamui_0.1.9_darwin_amd64.tar.gz"
-      sha256 "8ee9e3d9cc5c7497d025f255b332c160bda3708efa6000a0ed04d3459ae9723b"
+      url "https://github.com/kamui-project/cli/releases/download/v0.1.10/kamui_0.1.10_darwin_amd64.tar.gz"
+      sha256 "a6d2f4e45ec371ad9aae0a5526f195fe04e609b252e59540856fdc2dfc8e3b4d"
 
       define_method(:install) do
         bin.install "kamui"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/kamui-project/cli/releases/download/v0.1.9/kamui_0.1.9_darwin_arm64.tar.gz"
-      sha256 "67795e696d47d67bb5dae65d9814adccef372fde4dc59bbeeef29aed4109baa8"
+      url "https://github.com/kamui-project/cli/releases/download/v0.1.10/kamui_0.1.10_darwin_arm64.tar.gz"
+      sha256 "a05e45d90ba27be2416972fe7a95ea40ccc018457ca8324bc80a27113167f5f6"
 
       define_method(:install) do
         bin.install "kamui"
@@ -29,15 +29,15 @@ class Kamui < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kamui-project/cli/releases/download/v0.1.9/kamui_0.1.9_linux_amd64.tar.gz"
-      sha256 "e9acdb5a45ff5eefa3dc8a92ca051cda97aedaeae51b4a01f1d3f883c5e10b42"
+      url "https://github.com/kamui-project/cli/releases/download/v0.1.10/kamui_0.1.10_linux_amd64.tar.gz"
+      sha256 "c67e404ad6b0a4fc6f32b54eb1ee2cf575839eb99ae95e5ed16ca8e6c291ae19"
       define_method(:install) do
         bin.install "kamui"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kamui-project/cli/releases/download/v0.1.9/kamui_0.1.9_linux_arm64.tar.gz"
-      sha256 "fbf753cbc229d9d6fe13f9e261dadb7f69ab904f79f8ad58c8fdb3a89dc247ea"
+      url "https://github.com/kamui-project/cli/releases/download/v0.1.10/kamui_0.1.10_linux_arm64.tar.gz"
+      sha256 "f0dcefe31dd60c55d217daabd5cddfeb003e3a77dda2b3b465598dddf9bc6218"
       define_method(:install) do
         bin.install "kamui"
       end
