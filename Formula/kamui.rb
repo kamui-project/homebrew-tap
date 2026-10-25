@@ -5,21 +5,21 @@
 class Kamui < Formula
   desc "Command-line interface for Kamui Platform"
   homepage "https://kamui-platform.com"
-  version "0.1.21"
+  version "0.1.22"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/kamui-project/cli/releases/download/v0.1.21/kamui_0.1.21_darwin_amd64.tar.gz"
-      sha256 "e2b6492f678621781c9b93d96632600cced976879b5fa02d6233c3554ada2dd6"
+      url "https://github.com/kamui-project/cli/releases/download/v0.1.22/kamui_0.1.22_darwin_amd64.tar.gz"
+      sha256 "18e0b76d4f1f15a16a5049abcc79d405b212accbc946f5c329033b3d85672d6d"
 
       define_method(:install) do
         bin.install "kamui"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/kamui-project/cli/releases/download/v0.1.21/kamui_0.1.21_darwin_arm64.tar.gz"
-      sha256 "d61c490db3f4e88cbcaccf310ab90d48836306f6e9c8b9397551c9e065018037"
+      url "https://github.com/kamui-project/cli/releases/download/v0.1.22/kamui_0.1.22_darwin_arm64.tar.gz"
+      sha256 "b912354894ce0f6ee4274ed3d60e42b296ea04e7a0bee0183478efb7862b5c29"
 
       define_method(:install) do
         bin.install "kamui"
@@ -29,15 +29,15 @@ class Kamui < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kamui-project/cli/releases/download/v0.1.21/kamui_0.1.21_linux_amd64.tar.gz"
-      sha256 "a91f59ddf437aad2cf41392413224eb766390184e34064615340e005bc3819c0"
+      url "https://github.com/kamui-project/cli/releases/download/v0.1.22/kamui_0.1.22_linux_amd64.tar.gz"
+      sha256 "c1f16cf7316cf46cf269eb017106bdfc23774de2a9dd675f940892ee5e874d5a"
       define_method(:install) do
         bin.install "kamui"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kamui-project/cli/releases/download/v0.1.21/kamui_0.1.21_linux_arm64.tar.gz"
-      sha256 "88c8274296b4ef680879ca19e00881b876818e6372cdffa3191ccd38cdc10c12"
+      url "https://github.com/kamui-project/cli/releases/download/v0.1.22/kamui_0.1.22_linux_arm64.tar.gz"
+      sha256 "a557b04cc45f40984aaff1ae8108e279a21d8bc9136b4ab7d0e20d62d18b7f30"
       define_method(:install) do
         bin.install "kamui"
       end
